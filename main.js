@@ -78,6 +78,7 @@ define(function (require, exports, module) {
      * @param {String} indentSize
      */
     function _formatJavascript(unformattedText, indentChar, indentSize) {
+        unformattedText = unformattedText.replace(/\s+/, '');
         var options = {
             indent_size: indentSize,
             indent_char: indentChar
